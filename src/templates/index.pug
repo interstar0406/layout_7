@@ -9,70 +9,57 @@ block variables
 //- Phần khai báo body
 block body
 	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
-	section.home-slider
-		.owl-carousel.owl-theme
-			.item
-				img(src="./img/home_slider_1.jpg", alt="")
-				.title
-					.container
-						.row
-							.col-md-7
-								h2 Chúng tôi là FullStack Vietnam
-								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-			.item
-				img(src="./img/home_slider_1.jpg", alt="")
-				.title
-					.container
-						.row
-							.col-md-7
-								h2 Chúng tôi là FullStack Vietnam
-								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-			.item
-				img(src="./img/home_slider_1.jpg", alt="")
-				.title
-					.container
-						.row
-							.col-md-7
-								h2 Chúng tôi là FullStack Vietnam
-								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-	section.home-news
-		.container
-			.row
-				.col-md-4.item
-					figure
-						.blockimg
-							img(src="./img/home_news_1.jpg", alt="", srcset="")
-						figcaption
-							h3 
-								a(href="#") Chúng tôi là FullStack Vietnam
-							time 22/06/2018
-							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-				.col-md-4.item
-					figure
-						.blockimg
-							img(src="./img/home_news_2.jpg", alt="", srcset="")
-						figcaption
-							h3 
-								a(href="#") Chúng tôi là FullStack Vietnam
-							time 22/06/2018
-							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-				.col-md-4.item
-					figure
-						.blockimg
-							img(src="./img/home_news_3.jpg", alt="", srcset="")
-						figcaption
-							h3 
-								a(href="#") Chúng tôi là FullStack Vietnam
-							time 22/06/2018
-							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-	section.home-clients.mt-5
-		.container
-			.row
-				.col
-					.owl-carousel.owl-theme
-						- for(x=1;x<10;x++)
-							.item
-								if (x < 7)
-									img(src="./img/clients_"+x+".png", alt="")
-								else
-									img(src="./img/clients_"+(x-3)+".png", alt="")
+	//- section.home-jquery    //nav tab
+	//- 	ul.tabs
+	//- 		li.item.active(data-tab="1") Tab 1
+	//- 		li.item(data-tab="2") Tab 2
+	//- 		li.item(data-tab="3") Tab 3
+	//- 		li.item(data-tab="4") Tab 4
+	//- 	.content
+	//- 		.item#tab-1.active 1.ldv wl ev wale vlw alv jlaw vl
+	//- 		.item#tab-2 2.ldv wl ev wale vlw alv jlaw vl
+	//- 		.item#tab-3 3.ldv wl ev wale vlw alv jlaw vl
+	//- 		.item#tab-4 4.ldv wl ev wale vlw alv jlaw vl
+
+
+	section.home-borua
+		.logo.text-center.text-md-right
+			img(src="./img/logo.png", alt="Logo")
+		.nav-header.mt-5.mt-md-0
+			h1.text-center.text-md-right NETA VIETNAM
+			ul.mt-5
+				li.active
+					a(href="#") SỨ MỆNH FEDER 
+				li
+					a(href="#") BỌ RÙA STACKER 
+				li
+					a(href="#") DŨNG SĨ CODER 
+				li
+					a(href="#") NGÔI TRƯỜNG NETA 
+			.icons.mt-5
+				ul.list-inline
+					li.item.list-inline-item
+						a(href="#")
+							i.fa.fa-twitter
+					li.item.list-inline-item
+						a(href="#")
+							i.fa.fa-google
+					li.item.list-inline-item
+						a(href="#")
+							i.fa.fa-twitter
+		.owl
+			.owl-carousel.owl-theme
+				.item
+					img(src="./img/home_ladypug.png", alt="")
+					.bo_rua
+						img(src="./img/home_borua.png", alt="")
+				.item
+					img(src="./img/home_ladypug.png", alt="")
+					.bo_rua
+						img(src="./img/home_borua.png", alt="")
+				.item
+					img(src="./img/home_ladypug.png", alt="")
+					.bo_rua
+						img(src="./img/home_borua.png", alt="")
+		.footer
+			p ĐÀO TẠO CNTT TRỰC TUYẾN
